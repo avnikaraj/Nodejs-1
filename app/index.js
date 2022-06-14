@@ -1,6 +1,6 @@
 const _ = require("lodash");
 
-
+// SYNC FUNCTION
 // function read(path) {
 //   try {
 //     const data = fs.readFileSync("app/data.json", { encoding: "utf8" });
@@ -10,7 +10,7 @@ const _ = require("lodash");
 //   }
 // }
 
-
+// ASYNC FUNCTION
 const fs = require('fs/promises');
 
 async function read() {
@@ -18,6 +18,7 @@ async function read() {
     const data = await fs.readFile('app/data.json', { encoding: 'utf8' });
     return JSON.parse(data);
   } catch (err) {
+    console.log("Unable to reade the file");
     return [];
   }
 }

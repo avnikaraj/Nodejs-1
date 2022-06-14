@@ -9,4 +9,4 @@ read("./app/data.json").then(data=> {
     console.log(`The result of the sum is ${sum(concat(data))}`);
 });
 
-// console.log("Hello world")
+
