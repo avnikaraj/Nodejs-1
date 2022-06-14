@@ -1,7 +1,6 @@
 const fs = require("fs");
 const _ = require("lodash");
-const calc = require('./calc');
-const concat = require('./concat');
+
 
 function read(path) {
   try {
